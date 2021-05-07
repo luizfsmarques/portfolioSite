@@ -119,7 +119,7 @@
                                 <p>Curso de Inglês completo – Wise Up</p> 
                             </li>
                             <li>
-                                <p>Conhecimentos em Desenvolvimento public_html – HTML 5, CSS 3, JavaScript, PHP e Node.js</p>  
+                                <p>Conhecimentos em Desenvolvimento WEB – PHP, Laravel, HTML 5, CSS 3, JavaScript, Node.js e Python.</p>  
                             </li>
                             <li>
                                 <p>Graduação em Engenharia Civil – 7º Período</p> 

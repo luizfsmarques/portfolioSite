@@ -119,7 +119,7 @@
                                 <p>English course – Wise Up - Finished</p> 
                             </li>
                             <li>
-                                <p>public_html Development technologies – HTML 5, CSS 3, JavaScript, PHP and Node.js</p>  
+                                <p>WEB Development technologies – PHP, Laravel, HTML 5, CSS 3, JavaScript, Node.js and Python.</p>  
                             </li>
                             <li>
                                 <p>Degree in Civil Engineering – 7º Period</p> 
