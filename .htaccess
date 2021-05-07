@@ -1,0 +1,45 @@
+
+<IfModule mod_rewrite.c> #Trata as URls amigáveis
+
+    RewriteEngine On
+
+    #RewriteBase /web/meusite
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+
+    #Uso url amigável e com a expressão regular pego o seu valor e jogo como parâmetro 
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L,NC]
+  
+
+</IfModule>
+
+
+# INICIO  ******** Estava chamando as URLs uma a uma *************
+
+    #Link para o index do site
+    #RewriteRule ^index\/?$ App/Views/paginas/index.html [QSA,L,NC]
+
+    #Link para a pagina do login
+    #RewriteRule ^login\/?$ App/Views/paginas/login.html [QSA,L,NC]
+
+    #Link para a pagina do curriculo
+    #RewriteRule ^curriculo\/?$ App/Views/paginas/curriculo.html [QSA,L,NC]
+
+    #Link para a pagina do contato
+    #RewriteRule ^contato\/?$ App/Views/paginas/contato.html [QSA,L,NC]
+
+    #Link para a pagina dos projetos profissionais
+    #RewriteRule ^projetos-profissionais\/?$ App/Views/paginas/projetosprof.html [QSA,L,NC]
+
+    #Link para a pagina dos projetos pessoais
+    #RewriteRule ^projetos-pessoais\/?$ App/Views/paginas/projetospes.html [QSA,L,NC]
+
+    #Submit do form do contato
+    #RewriteRule ^inserir-contato\/?$ App/Controllers/ContatoController.php [QSA,L,NC]
+
+    #Submit do form login para entrar no admin
+    #RewriteRule ^acesso-login\/?$ App/Controllers/LoginController.php [QSA,L,NC]
+
+    # FIM ******** Estava chamando as URLs uma a uma *************

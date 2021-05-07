@@ -1,0 +1,473 @@
+/*Apenas para a HOME*/
+.titulo-home{
+
+    margin-left: 8%;
+    padding-top: 5%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+/*Fim - Apenas para a HOME*/
+
+/*Estilos para o menu*/
+.menu{
+
+    box-sizing: border-box;
+    height: 10%;
+    margin-bottom: 30px;
+    background-color: rgb(38, 40, 43);
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-titulo{
+        margin-left: 8%;
+        margin-right: 20px;
+        color:whitesmoke;
+        font-size: 1.7rem;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+.box-links{
+    height: 100%;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-links li{
+    height: 100%;
+}
+
+.links{
+
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.05rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:whitesmoke;
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.links:hover{
+    background-color: black;
+}
+
+@media screen and (max-width:398px)
+{
+    .menu{
+        width:100%;
+        height: 30%;
+        background-color: rgb(38, 40, 43);
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-links{
+        box-sizing: border-box;
+        height: 70%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box-links li{       
+        width: 100%;
+        height:20px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .links{
+        display: inline-block;
+        align-content: center;
+        font-size: 1.3rem;
+        
+    } 
+}
+
+/* Fim - Estilos menu*/
+
+/*Estilização de componentes gerais*/
+body{
+
+    width: 100vw;
+    height: 100vh;
+    background-color:whitesmoke ;
+    
+}
+
+main{
+    box-sizing: border-box;
+    height: 75%;
+    background-color: whitesmoke;  
+}
+
+.rodape{
+
+    box-sizing: border-box; 
+    height: 10%;
+    background-color: whitesmoke; 
+
+}
+
+.div-rodape{
+    height: 9%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-top: 1px solid black;
+
+}
+
+.div-rodape a, .div-rodape p{
+    margin-top: 1%;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+    display:inline-block;
+
+}
+
+.div-rodape a:hover{
+    color:blueviolet;
+}
+
+@media screen and (max-width:916px){
+    
+    main{
+        height: 150%;
+    }
+    .rodape{
+        margin-top: 20px;
+    }
+    
+}
+
+/*Fim - Estilização de componentes gerais*/
+
+/*Estilos para as views cadastrar e editar*/
+
+.box-form-cadastrar-editar{
+
+    height:95%;
+    width:100%;
+    padding-top: 2%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    
+}
+
+.box-form-cadastrar-editar h1{
+    width:40%;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form-cadastrar, #form-editar{
+    width:40%;
+}
+
+.form-section{
+    width:100%;
+}
+
+.form-section label{
+    margin-top: 20px;
+    font-size: 1.05rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.form-section input{
+    width:100%;
+    height: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: .5px solid black;
+    border-radius: 5px;
+    
+}
+
+.form-section textarea{
+    width:100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: .5px solid black;
+    border-radius: 5px;
+}
+
+#form-cadastrar button{ 
+    /*width: 70px;
+    height:22px;
+    cursor: pointer; */
+
+    display:inline-block;
+    width: 60px;
+    height:25px;
+    margin-right: 10px;
+    font-size: .95rem;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.botoes-editar{
+    box-sizing: border-box;
+    width: 100%;
+    height:40px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+#form-editar button{
+    display:inline-block;
+    width: 60px;
+    height:25px;
+    margin-right: 10px;
+    font-size: .95rem;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#form-editar a{
+    width: 60px;
+    height:23px;
+    font-size: .95rem;
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid black;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+@media screen and (max-width:398px){
+
+    #form-cadastrar, #form-editar{
+        box-sizing: border-box;
+        width: 80%;
+    }
+}
+
+/* Fim - Estilos para as views cadastrar e editar*/
+
+/*Estilos para a view listar produtos*/
+
+.box-tabela-listar{
+    width:84%;
+    margin: auto;   
+}
+
+.tabela-dados{
+    width: 100%;
+}
+
+.linha-titulo-tabela{
+    height: 30px;
+    text-align: justify;
+    border:1px solid black;
+    background-color: 	#B0E0E6;
+}
+
+.titulo-tabela{
+    border:1px solid black;
+    padding-top:.5%; 
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.linha-dados-tabela{
+
+    height: 40px;
+    text-align: justify;
+
+}
+
+.dados-tabela{
+    border:1px solid black;
+    padding-top:.7%; 
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    position:relative;
+}
+
+.button-editar{
+    
+    display:inline-block;
+    width:60px;
+    height:20px;
+    margin-left:10px ;
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer; 
+}
+
+.button-editar:hover{
+    color:blue;
+}
+
+.button-excluir{
+    
+    display:inline-block;
+    width:60px;
+    height:20px;
+    padding: 2px;
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer; 
+}
+
+.button-excluir:hover{
+    color:red;
+}
+
+@media screen and (max-width:916px){
+    
+    .titulo-tabela{
+        display: none;
+    }
+
+    .linha-dados-tabela{
+        margin-bottom: 50px;
+        border-bottom: 1px solid black;
+    }
+
+    .dados-tabela{
+        display:block;
+        border: none;
+        text-align: right;
+    }
+
+    .dados-tabela:before{
+        content: attr(data-title);
+        position:absolute;
+        left:0px;
+        font-weight: bold;
+    }
+
+}
+
+/* Fim - Estilos para a view listar produtos*/
+
+/*Estilos para a view excluir produtos*/
+
+.box-form-excluir{
+    width: 40%;
+    margin:auto;
+}
+
+.titulo-form-excluir{
+    display: inline-block   ;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-excluir{
+
+    box-sizing: border-box;
+    width:100%;
+    margin-top: 20px;
+}
+
+.texto-form-excluir{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border:1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.botoes-excluir{
+    box-sizing: border-box;
+    width: 100%;
+    height:40px;
+    border:1px solid black;
+    border-top: unset;
+    background-color: lightgray;
+    
+
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.botoes-excluir button{
+    display:inline-block;
+    width: 60px;
+    height:25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: .95rem;
+    font-family: 'Times New Roman', Times, serif;
+    border:none;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.botoes-excluir a{
+    
+    width: 60px;
+    height:23px;
+    font-size: .95rem;
+    font-family:'Times New Roman', Times, serif;
+    border:1px solid black;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:398px){
+
+    .box-form-excluir{
+        width:80%
+    }
+    
+}
+
+/* Fim - Estilos para a view excluir produtos*/

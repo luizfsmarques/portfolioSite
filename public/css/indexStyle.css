@@ -1,0 +1,254 @@
+body{
+    box-sizing: border-box;
+    width:100vw;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+.topo{
+    width: 100%;
+    height: 15%;
+    margin-bottom: 15px;
+    
+    display: flex;
+    flex-direction: row;
+
+    background-color: black;
+}
+
+.container-img{
+    box-sizing: border-box;
+    width: 250px;
+    height: 80%;
+    position: relative;
+    left: 30px;
+    top:5px;
+
+}
+
+.img-topo{
+    width: 100%;
+    height: 100%;      
+}
+
+.div-idiomas{
+    height: 80px;
+    position: absolute;
+    top: 45px;
+    right: 205px;
+    /* background-color: blue; */
+}
+
+.bandeiras-idiomas{
+    box-sizing: border-box;
+    width: 85px;
+    padding-left:6px;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+   
+    background-color: black;
+}
+
+.brasil{
+    margin-right: 5px;
+}
+
+.brasil img, .usa img{
+    width: 35px;
+    height: 20px;
+}
+
+
+.btn-login{
+    box-sizing: border-box;
+    width:100px;
+    height: 40px;
+    position: absolute;
+    right: 70px;
+    top:35px;
+    border: .2px solid white;  
+}
+
+.btn-login:hover{
+    opacity: .5;
+}
+
+.btn-login a{
+
+    width:100%;
+    height: 100%;
+
+    text-decoration:none;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+  
+}
+
+.container-index-links{
+    box-sizing: border-box;
+    width:100vw;
+    height: 72.5%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.index-links{
+    box-sizing: border-box;
+    width:400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.index-links ul{
+    box-sizing: border-box;
+    width:300px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+.index-links ul:hover{
+    opacity: .5;
+}
+
+.index-links a{
+    box-sizing: border-box;
+    font-size: 1.60rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color:white;
+
+}
+
+footer{
+    box-sizing: border-box;
+    padding: 20px;
+    width:100vw;
+    height:10%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p{
+    width: 200px;
+    position: relative;
+    top:2.5px;
+    font-size: 1.1em;
+    font-style: 'Times New Roman', Times, serif;
+    color:white;
+    display: inline;
+    
+}
+
+footer a{
+    padding-top: 0;
+    margin-left:7px ;
+    position: relative;
+    top:-9px;
+    font-size: 0;
+    color:black;
+    
+}
+
+/* Design responsivo   */
+
+@media screen and (max-width:768px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .topo{
+        position:unset;
+        height: 25%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-img{
+        height: 50%;
+        position: unset;
+        margin: auto;
+        margin-top:10px;
+        margin-bottom: 20px;
+    }
+
+    .img-topo{
+        margin: unset;
+        margin:auto;
+    }
+
+    .bandeiras-idiomas{
+        width:40px;
+        height: 65px;
+        padding: unset;
+        display: block;
+        position: absolute;
+        top: 68px;
+        right:-180px;
+    }
+
+    .btn-login{
+        position:unset;
+        margin:auto ;
+    }
+
+    .container-index-links{
+        margin: auto;
+        margin-top: 40px;
+        height:300px;
+
+        /* background-color: violet; */
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+    }
+}
+
+@media screen and (max-width:398px){
+
+    footer div{
+        margin-right: 10px;
+    }
+
+    footer .links-footer{
+
+        margin-top: 20px;
+
+    }
+
+
+
+}

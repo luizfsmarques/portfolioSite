@@ -1,0 +1,17 @@
+
+<IfModule mod_rewrite.c> #Trata as URls amigáveis
+
+    RewriteEngine On
+
+    RewriteBase /public_html/mysite
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-l
+
+    #Uso url amigável e com a expressão regular pego o seu valor e jogo como parâmetro 
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L,NC]
+  
+
+</IfModule>
+
